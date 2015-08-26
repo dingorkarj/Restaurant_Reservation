@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <title>Flavours</title>
+</head>
+<body>
+<header>
+    <div class="navbar-wrapper">
+        <div class="">
+            <nav class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a id="_brand_name" class="navbar-brand" href="#">Flavours Resto</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#">Welcome, Customer</a></li>
+                            <li><a href="login.html">Home</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<content>
+<div class="_text_align_center">
+    <h3>Your reservation</h3>
+
+    Table Number 3
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myCancelModal1">
+        Cancel
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myCancelModal1" tabindex="-1" role="dialog" aria-labelledby="myCancelModalLabel1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalCancelLabel1">Cancel Reservation</h4>
+                </div>
+                <div class="modal-body _modal_body_height">
+                    <label for="_confirmation_code" class="col-sm-offset-1 col-sm-3 control-label">Confirmation
+                        code</label>
+
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="_confirmation_code" placeholder="Confirmation Code">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning" onclick="$('#myCancelModal1').modal('hide')" data-toggle="modal" data-target="#myCancelModal2">Continue</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!--Modal-->
+    <div class="modal fade" id="myCancelModal2" tabindex="-1" role="dialog" aria-labelledby="myCancelModalLabel2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myCancelModalLabel2">Cancel Reservation</h4>
+                </div>
+                <div class="modal-body _modal_body_height">
+                  Are you sure to want to cancel?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" >No</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="$('#myCancelModal2').modal('hide')" data-toggle="modal" data-target="#myCancelModal3">Yes</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!--Modal-->
+    <div class="modal fade" id="myCancelModal3" tabindex="-1" role="dialog" aria-labelledby="myCancelModalLabel3">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!--div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myCancelModalLabel3">Cancel Reservation</h4>
+                </div-->
+                <div class="modal-body _modal_body_height">
+                    Reservation is cancelled successfully!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+</div>
+</content>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/myjs.js"></script>
+<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
